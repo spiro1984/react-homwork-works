@@ -1,17 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./CourseCard.scss";
+import { Link } from "react-router-dom";
 
-const CourseCard = ({ title, subtitle, imgSrc, imgAlt }) => {
+const CourseCard = ({ title, subtitle, imgSrc, imgAlt, url }) => {
   return (
     <article className="CourseCard">
-      <a href="#">
+      <Link to={`/course/${url}`}>
         <figure className="CourseCard-Figure">
           <img src={imgSrc} alt={imgAlt} className="CourseCard-Image" />
         </figure>
         <h3 className="CourseCard-Title">{title}</h3>
         <p className="CourseCard-Subtitle">{subtitle}</p>
-      </a>
+      </Link>
     </article>
   );
 };
@@ -21,6 +22,7 @@ CourseCard.propTypes = {
   subtitle: PropTypes.string,
   imgSrc: PropTypes.string,
   imgAlt: PropTypes.string,
+  url: PropTypes.number,
 };
 
 export default CourseCard;

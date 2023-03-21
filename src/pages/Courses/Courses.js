@@ -21,6 +21,7 @@ const Courses = () => {
                 imgAlt={course.img.alt}
                 title={course.title}
                 subtitle={course.subtitle}
+                url={course.id}
               />
             ))}
           </Grid>

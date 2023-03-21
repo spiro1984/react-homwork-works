@@ -16,6 +16,9 @@ export const courses = [
       src: Image1,
       alt: "Introduction",
     },
+    content: `At the academy, I learned how to apply technology in practice.
+    Frontend education was demanding, it required a lot of time. Upon
+    completion, I got my first job as a developer.`,
   },
   {
     id: 2,
@@ -25,6 +28,9 @@ export const courses = [
       src: Image2,
       alt: "HTML & CSS",
     },
+    content: `At the academy, I learned how to apply technology in practice.
+    Frontend education was demanding, it required a lot of time. Upon
+    completion, I got my first job as a developer.`,
   },
   {
     id: 3,
@@ -34,6 +40,9 @@ export const courses = [
       src: Image3,
       alt: "Version Control Systems",
     },
+    content: `At the academy, I learned how to apply technology in practice.
+    Frontend education was demanding, it required a lot of time. Upon
+    completion, I got my first job as a developer.`,
   },
   {
     id: 4,
@@ -43,6 +52,9 @@ export const courses = [
       src: Image4,
       alt: "Advanced CSS",
     },
+    content: `At the academy, I learned how to apply technology in practice.
+    Frontend education was demanding, it required a lot of time. Upon
+    completion, I got my first job as a developer.`,
   },
   {
     id: 5,
@@ -52,6 +64,9 @@ export const courses = [
       src: Image5,
       alt: "react",
     },
+    content: `At the academy, I learned how to apply technology in practice.
+    Frontend education was demanding, it required a lot of time. Upon
+    completion, I got my first job as a developer.`,
   },
   {
     id: 6,
@@ -61,6 +76,9 @@ export const courses = [
       src: Image6,
       alt: "Advanced CSS",
     },
+    content: `At the academy, I learned how to apply technology in practice.
+    Frontend education was demanding, it required a lot of time. Upon
+    completion, I got my first job as a developer.`,
   },
   {
     id: 7,
@@ -70,6 +88,9 @@ export const courses = [
       src: Image7,
       alt: "Advanced CSS",
     },
+    content: `At the academy, I learned how to apply technology in practice.
+    Frontend education was demanding, it required a lot of time. Upon
+    completion, I got my first job as a developer.`,
   },
   {
     id: 8,
@@ -79,6 +100,9 @@ export const courses = [
       src: Image8,
       alt: "Advanced CSS",
     },
+    content: `At the academy, I learned how to apply technology in practice.
+    Frontend education was demanding, it required a lot of time. Upon
+    completion, I got my first job as a developer.`,
   },
 ];
 
