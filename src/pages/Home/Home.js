@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "../../components/Button/Button";
 import CourseCard from "../../components/CourseCard/CourseCard";
 import Grid from "../../components/Grid/Grid";
@@ -9,9 +8,21 @@ import Testimonial from "../../components/Testimonial/Testimonial";
 import { courses, testimonials } from "../../utils/data";
 import TestimonialImg from "../../assets/images/testimonial.jpg";
 import { useNavigate } from "react-router-dom";
+import Loader from "../../components/Loader/Loader";
+import { courses as data } from "../../utils/data";
+import React, { useEffect, useState } from "react";
 
 const Home = () => {
   const navigate = useNavigate();
+
+  const [courses, setCourses] = useState(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setCourses(data.slice(0, 4));
+    }, 1000);
+  }, []);
+
   return (
     <>
       <Header />
@@ -26,18 +37,22 @@ const Home = () => {
             </Button>
           }
         >
-          <Grid>
-            {courses.slice(0, 4).map((course) => (
-              <CourseCard
-                key={course.id}
-                imgSrc={course.img.src}
-                imgAlt={course.img.alt}
-                title={course.title}
-                subtitle={course.subtitle}
-                url={course.id}
-              />
-            ))}
-          </Grid>
+          {courses ? (
+            <Grid>
+              {courses.slice(0, 4).map((course) => (
+                <CourseCard
+                  key={course.id}
+                  imgSrc={course.img.src}
+                  imgAlt={course.img.alt}
+                  title={course.title}
+                  subtitle={course.subtitle}
+                  url={course.id}
+                />
+              ))}
+            </Grid>
+          ) : (
+            <Loader />
+          )}
         </Section>
         <Section isSecondary>
           <Testimonial imgSrc={TestimonialImg} imgAlt="Testimonial">
