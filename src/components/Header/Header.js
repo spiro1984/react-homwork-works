@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.scss";
 import Button from "../Button/Button";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   Header as HeaderWrapper,
   HeaderInner,
@@ -13,6 +13,8 @@ import {
 } from "./HeaderStyles";
 
 const Header = ({ isSecondary = false }) => {
+  const navigate = useNavigate();
+
   return (
     <HeaderWrapper isSecondary={isSecondary}>
       <HeaderInner>
@@ -34,7 +36,9 @@ const Header = ({ isSecondary = false }) => {
         <Nav>
           <HeaderLink to={"/courses"}>Courses</HeaderLink>
           <HeaderButton>Sign in</HeaderButton>
-          <HeaderButton isSecondary>Register</HeaderButton>
+          <HeaderButton onClick={() => navigate("/register")} isSecondary>
+            Register
+          </HeaderButton>
         </Nav>
       </HeaderInner>
     </HeaderWrapper>

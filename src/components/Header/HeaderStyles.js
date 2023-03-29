@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ReactComponent as HamburgerIcon } from "../../assets/images/icon-hamburger.svg";
 import { NavLink } from "react-router-dom";
-import Button from "../Button/Button";
+import { Button } from "../../utils/style/generalStyles";
 import { colors, breakpoints } from "../../utils/style/theme";
 
 export const Header = styled.header`
