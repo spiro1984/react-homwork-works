@@ -35,7 +35,9 @@ const Header = ({ isSecondary = false }) => {
         <Hamburger />
         <Nav>
           <HeaderLink to={"/courses"}>Courses</HeaderLink>
-          <HeaderButton>Sign in</HeaderButton>
+          <HeaderButton onClick={() => navigate("/sign-in")}>
+            Sign in
+          </HeaderButton>
           <HeaderButton onClick={() => navigate("/register")} isSecondary>
             Register
           </HeaderButton>
