@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Header from "../../components/Header/Header";
-import Grid from "../../components/Grid/Grid";
-import { courses as data } from "../../utils/data";
 import CourseCard from "../../components/CourseCard/CourseCard";
-import Section from "../../components/Section/Section";
+import Grid from "../../components/Grid/Grid";
+import Header from "../../components/Header/Header";
 import Loader from "../../components/Loader/Loader";
-import SearchBar from "../../components/SearchBar/SearchBar";
+import { SearchBar } from "../../utils/style/generalStyles";
+import Section from "../../components/Section/Section";
+import { courses as data } from "../../utils/data";
 
 const Courses = () => {
   const [courses, setCourses] = useState(null);
@@ -18,25 +18,22 @@ const Courses = () => {
 
   const handleSearch = (e) => {
     const courseTitle = e.target.value.toLowerCase();
-    console.log(courseTitle);
 
     const filteredCourses = data.filter((course) =>
       course.title.toLowerCase().includes(courseTitle)
     );
+
     setCourses(filteredCourses);
   };
 
   return (
     <>
-      <Header className={"Header"} isSecondary />
+      <Header isSecondary />
       <main>
         <Section
-          title={"All courses"}
-          button={
-            <SearchBar
-              placeholder={"Search courses"}
-              handleSearch={handleSearch}
-            />
+          title="All courses"
+          actionContainer={
+            <SearchBar placeholder={"Search courses"} onChange={handleSearch} />
           }
         >
           {courses ? (
@@ -44,10 +41,10 @@ const Courses = () => {
               {courses.map((course) => (
                 <CourseCard
                   key={course.id}
-                  imgSrc={course.img.src}
-                  imgAlt={course.img.alt}
                   title={course.title}
                   subtitle={course.subtitle}
+                  imgSrc={course.img.src}
+                  imgAlt={course.img.alt}
                   url={course.id}
                 />
               ))}

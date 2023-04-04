@@ -90,7 +90,7 @@ const Register = () => {
 
                   setSuccessMessage({
                     error: false,
-                    message: "User is registered succesfully",
+                    message: "User is registered successfully",
                   });
 
                   setTimeout(() => {
@@ -100,7 +100,7 @@ const Register = () => {
                 .catch((res) => {
                   setSuccessMessage({
                     error: true,
-                    message: "There was an error with registration",
+                    message: "There was an error with user registration",
                   });
                 })
                 .finally(() => {

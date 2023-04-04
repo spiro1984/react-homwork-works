@@ -33,7 +33,7 @@ export const loginUser = (user) => {
 };
 
 export const getAllUsers = (authToken) => {
-  return fetch(`${apiOrigin}/api/users`, {
+  return fetch(`${apiOrigin}/api/users?page=1&size=200`, {
     headers: {
       Authorization: `Bearer ${authToken}`,
     },

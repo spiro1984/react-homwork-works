@@ -1,14 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { Button } from "../../utils/style/generalStyles";
 import "./Landing.scss";
 import LandingImg from "../../assets/images/landing.jpg";
-import Button from "../Button/Button";
-import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (
     <section className="Landing">
       <figure className="Landing-Figure">
-        <img src={LandingImg} alt="Landing image" className="Landing-Image" />
+        <img src={LandingImg} alt="Landing" className="Landing-Image" />
       </figure>
       <div className="Landing-Overlay Landing-Overlay_left"></div>
       <div className="Landing-Overlay Landing-Overlay_right"></div>
@@ -22,7 +22,7 @@ const Landing = () => {
             with knowledge-based lessons from IT practice.
           </p>
           <Link to={"/courses"}>
-            <Button isLanding>Explore courses</Button>
+            <Button isLanding={true}>Explore courses</Button>
           </Link>
         </div>
       </div>

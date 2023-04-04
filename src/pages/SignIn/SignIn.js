@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Formik } from "formik";
 import * as Yup from "yup";
 import Header from "../../components/Header/Header";
@@ -9,12 +9,14 @@ import {
   Field,
   ErrorMessage,
   FormWrapper,
-  FormSuccessMessage,
   Button,
 } from "../../utils/style/generalStyles";
 import { getAllUsers, loginUser } from "../../api/users";
+import { AuthContext } from "../../context/AuthContext";
 
 const SignIn = () => {
+  const { setIsLoggedIn } = useContext(AuthContext);
+
   return (
     <>
       <Header isSecondary={true} />
@@ -37,14 +39,18 @@ const SignIn = () => {
               try {
                 const res = await loginUser(values);
                 const users = await getAllUsers(res.access_token);
+                const user = users.data.find(
+                  (user) => user.email === values.email
+                );
 
-                const user = users.find((user) => user.email === values.email);
+                localStorage.setItem("accessToken", res.access_token);
+                setIsLoggedIn(true);
 
                 console.log(res);
                 console.log(users);
                 console.log(user);
               } catch (err) {
-                console.log("greškica");
+                console.log("grešpkica");
               } finally {
                 actions.setSubmitting(false);
               }
@@ -73,7 +79,7 @@ const SignIn = () => {
                   </FormRow>
                   <FormRow>
                     <Button type="submit" isSecondary>
-                      Sign In
+                      Sign in
                     </Button>
                   </FormRow>
                 </Form>

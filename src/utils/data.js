@@ -16,9 +16,7 @@ export const courses = [
       src: Image1,
       alt: "Introduction",
     },
-    content: `At the academy, I learned how to apply technology in practice.
-    Frontend education was demanding, it required a lot of time. Upon
-    completion, I got my first job as a developer.`,
+    content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam non incidunt enim doloremque quibusdam deleniti consequuntur officia dolorum eveniet odit! Quis consequatur qui magni culpa explicabo tempore blanditiis necessitatibus sunt.`,
   },
   {
     id: 2,
@@ -28,9 +26,7 @@ export const courses = [
       src: Image2,
       alt: "HTML & CSS",
     },
-    content: `At the academy, I learned how to apply technology in practice.
-    Frontend education was demanding, it required a lot of time. Upon
-    completion, I got my first job as a developer.`,
+    content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam non incidunt enim doloremque quibusdam deleniti consequuntur officia dolorum eveniet odit! Quis consequatur qui magni culpa explicabo tempore blanditiis necessitatibus sunt.`,
   },
   {
     id: 3,
@@ -40,9 +36,7 @@ export const courses = [
       src: Image3,
       alt: "Version Control Systems",
     },
-    content: `At the academy, I learned how to apply technology in practice.
-    Frontend education was demanding, it required a lot of time. Upon
-    completion, I got my first job as a developer.`,
+    content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam non incidunt enim doloremque quibusdam deleniti consequuntur officia dolorum eveniet odit! Quis consequatur qui magni culpa explicabo tempore blanditiis necessitatibus sunt.`,
   },
   {
     id: 4,
@@ -52,9 +46,7 @@ export const courses = [
       src: Image4,
       alt: "Advanced CSS",
     },
-    content: `At the academy, I learned how to apply technology in practice.
-    Frontend education was demanding, it required a lot of time. Upon
-    completion, I got my first job as a developer.`,
+    content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam non incidunt enim doloremque quibusdam deleniti consequuntur officia dolorum eveniet odit! Quis consequatur qui magni culpa explicabo tempore blanditiis necessitatibus sunt.`,
   },
   {
     id: 5,
@@ -64,9 +56,7 @@ export const courses = [
       src: Image5,
       alt: "react",
     },
-    content: `At the academy, I learned how to apply technology in practice.
-    Frontend education was demanding, it required a lot of time. Upon
-    completion, I got my first job as a developer.`,
+    content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam non incidunt enim doloremque quibusdam deleniti consequuntur officia dolorum eveniet odit! Quis consequatur qui magni culpa explicabo tempore blanditiis necessitatibus sunt.`,
   },
   {
     id: 6,
@@ -76,9 +66,7 @@ export const courses = [
       src: Image6,
       alt: "Advanced CSS",
     },
-    content: `At the academy, I learned how to apply technology in practice.
-    Frontend education was demanding, it required a lot of time. Upon
-    completion, I got my first job as a developer.`,
+    content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam non incidunt enim doloremque quibusdam deleniti consequuntur officia dolorum eveniet odit! Quis consequatur qui magni culpa explicabo tempore blanditiis necessitatibus sunt.`,
   },
   {
     id: 7,
@@ -88,9 +76,7 @@ export const courses = [
       src: Image7,
       alt: "Advanced CSS",
     },
-    content: `At the academy, I learned how to apply technology in practice.
-    Frontend education was demanding, it required a lot of time. Upon
-    completion, I got my first job as a developer.`,
+    content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam non incidunt enim doloremque quibusdam deleniti consequuntur officia dolorum eveniet odit! Quis consequatur qui magni culpa explicabo tempore blanditiis necessitatibus sunt.`,
   },
   {
     id: 8,
@@ -100,9 +86,7 @@ export const courses = [
       src: Image8,
       alt: "Advanced CSS",
     },
-    content: `At the academy, I learned how to apply technology in practice.
-    Frontend education was demanding, it required a lot of time. Upon
-    completion, I got my first job as a developer.`,
+    content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam non incidunt enim doloremque quibusdam deleniti consequuntur officia dolorum eveniet odit! Quis consequatur qui magni culpa explicabo tempore blanditiis necessitatibus sunt.`,
   },
 ];
 

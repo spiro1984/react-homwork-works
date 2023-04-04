@@ -6,7 +6,7 @@ import SingleCourse from "../../components/SingleCourse/SingleCourse";
 import { useNavigate, useParams } from "react-router-dom";
 import { courses } from "../../utils/data";
 
-const Course = () => {
+const Profile = () => {
   const navigate = useNavigate();
   const { id } = useParams();
 
@@ -16,22 +16,10 @@ const Course = () => {
     <>
       <Header isSecondary />
       <main>
-        <Section
-          title={course.title}
-          actionContainer={
-            <Button isOutline onClick={() => navigate(-1)}>
-              Back
-            </Button>
-          }
-          helperText={course.subtitle}
-        >
-          <SingleCourse imgSrc={course.img.src} imgAlt={course.img.alt}>
-            {course.content}
-          </SingleCourse>
-        </Section>
+        <Section title={"Profile"}>Profile page content</Section>
       </main>
     </>
   );
 };
 
-export default Course;
+export default Profile;

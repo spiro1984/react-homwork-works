@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { ReactComponent as HamburgerIcon } from "../../assets/images/icon-hamburger.svg";
 import { NavLink } from "react-router-dom";
 import { Button } from "../../utils/style/generalStyles";
+import { ReactComponent as HamburgerIcon } from "../../assets/images/icon-hamburger.svg";
 import { colors, breakpoints } from "../../utils/style/theme";
 
-export const Header = styled.header`
+export const HeaderWrapper = styled.header`
   position: absolute;
   left: 0;
   z-index: 100;
@@ -14,9 +14,9 @@ export const Header = styled.header`
   ${(props) =>
     props.isSecondary &&
     `
-      position: initial;
-      background-color: ${colors.textPrimary};
-      `}
+    position: initial;
+    background-color: ${colors.textPrimary};
+  `}
 
   @media screen and (${breakpoints.desktop}) {
     padding: 32px 0;
@@ -60,9 +60,9 @@ export const Nav = styled.nav`
   }
 `;
 
-export const Link = styled(NavLink)`
+export const HeaderLink = styled(NavLink)`
   display: block;
-  color: ${colors.bgSecondary};
+  color: ${colors.secondary};
   text-decoration: none;
   letter-spacing: 1px;
   font-size: 16px;
@@ -70,7 +70,7 @@ export const Link = styled(NavLink)`
   transition: text-shadow 0.3s ease-out;
 
   &:hover {
-    text-shadow: 0.7px 0 0 ${colors.bgPrimary};
+    text-shadow: 0.7px 0 0 ${colors.secondary};
   }
 `;
 

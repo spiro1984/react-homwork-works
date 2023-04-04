@@ -1,7 +1,7 @@
 import React from "react";
-import { LoaderWrapper } from "./LoaderStyles";
 import { ThreeDots } from "react-loader-spinner";
 import { colors } from "../../utils/style/theme";
+import { LoaderWrapper } from "./LoaderStyles";
 
 const Loader = () => {
   return (
@@ -12,8 +12,6 @@ const Loader = () => {
         radius="9"
         color={colors.primary}
         ariaLabel="three-dots-loading"
-        wrapperStyle={{}}
-        wrapperClassName=""
         visible={true}
       />
     </LoaderWrapper>
